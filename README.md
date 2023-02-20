@@ -1,7 +1,4 @@
 # net.wikipunk/punk.qudt
-Quantity
-
-## QUDT
 [QUDT](https://qudt.org/) 
 
 * Conversion between single and complex unit types
