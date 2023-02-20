@@ -1,5 +1,17 @@
 {:vocab  {:sc/create-fn net.wikipunk.rdf/map->UniversalTranslator
           :init-ns      net.wikipunk.mop.init
           :ns-prefix    "net.wikipunk.rdf."
-          :boot         [net.wikipunk.punk.qudt.boot/punk.qudt]}
+          :boot         [net.wikipunk.punk.qudt.boot/punk.qudt
+                         net.wikipunk.punk.qudt.boot/constant
+                         net.wikipunk.punk.qudt.boot/datatype
+                         net.wikipunk.punk.qudt.boot/dimensionvector
+                         net.wikipunk.punk.qudt.boot/discipline
+                         net.wikipunk.punk.qudt.boot/math
+                         net.wikipunk.punk.qudt.boot/qkdv
+                         net.wikipunk.punk.qudt.boot/quantitykind
+                         net.wikipunk.punk.qudt.boot/qudt
+                         net.wikipunk.punk.qudt.boot/soqk
+                         net.wikipunk.punk.qudt.boot/sou
+                         net.wikipunk.punk.qudt.boot/qudt.type
+                         net.wikipunk.punk.qudt.boot/unit]}
  :openai {:sc/create-fn net.wikipunk.openai/map->Client}}
