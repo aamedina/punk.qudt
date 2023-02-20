@@ -1,4 +1,4 @@
-(ns net.wikipunk.rdf.qudt.discipline
+(ns net.wikipunk.rdf.discipline
   "QUDT Disciplines Ontology"
   {:dcat/downloadURL
    "https://raw.githubusercontent.com/qudt/qudt-public-repo/main/vocab/disciplines/VOCAB_QUDT-DISCIPLINES-v2.1.ttl",
@@ -12,19 +12,18 @@
                        "owl" "http://www.w3.org/2002/07/owl#",
                        "prov" "http://www.w3.org/ns/prov#",
                        "qudt" "http://qudt.org/schema/qudt/",
-                       "qudt.discipline" "http://qudt.org/vocab/discipline/",
                        "rdf" "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
                        "rdfs" "http://www.w3.org/2000/01/rdf-schema#",
                        "skos" "http://www.w3.org/2004/02/skos/core#",
                        "vaem" "http://www.linkedmodel.org/schema/vaem#",
                        "xsd" "http://www.w3.org/2001/XMLSchema#"},
    :rdf/type :owl/Ontology,
-   :rdfa/prefix "qudt.discipline",
+   :rdfa/prefix "discipline",
    :rdfa/uri "http://qudt.org/2.1/vocab/discipline",
    :rdfs/label "QUDT Disciplines Ontology",
    :vaem/hasGraphMetadata :vaem/GMD_QUDT-2.1-VOCAB-DISCIPLINES})
 
-(def ^{:private true} Acoustics
+(def Acoustics
   "Acoustics"
   {:db/ident         :discipline/Acoustics,
    :qudt/relevantQuantityKind [:quantitykind/Dissipance
@@ -71,7 +70,7 @@
                       :rdf/value    "Acoustics"},
    :skos/broader     :discipline/ClassicalMechanics})
 
-(def ^{:private true} AeroThermalDynamics
+(def AeroThermalDynamics
   "AeroThermalDynamics"
   {:db/ident         :discipline/AeroThermalDynamics,
    :rdf/type         :qudt/Discipline,
@@ -82,7 +81,7 @@
                        :rdf/value    "Aero thermal dynamics"}],
    :skos/broader     :discipline/Aerodynamics})
 
-(def ^{:private true} Aerodynamics
+(def Aerodynamics
   "<p>Aerodynamics is the study of the motion of air, particularly its interaction with a solid object, such as an airplane wing. Aerodynamics is a sub-field of fluid dynamics and gas dynamics, and many aspects of aerodynamics theory are common to these fields. The term aerodynamics is often used synonymously with gas dynamics, the difference being that \"gas dynamics\" applies to the study of the motion of all gases, and is not limited to air.</p>"
   {:db/ident :discipline/Aerodynamics,
    :qudt/onlineReference
@@ -98,7 +97,7 @@
    :skos/definition
    "<p>Aerodynamics is the study of the motion of air, particularly its interaction with a solid object, such as an airplane wing. Aerodynamics is a sub-field of fluid dynamics and gas dynamics, and many aspects of aerodynamics theory are common to these fields. The term aerodynamics is often used synonymously with gas dynamics, the difference being that \"gas dynamics\" applies to the study of the motion of all gases, and is not limited to air.</p>"})
 
-(def ^{:private true} Any
+(def Any
   "Any"
   {:db/ident         :discipline/Any,
    :rdf/type         :qudt/Discipline,
@@ -106,7 +105,7 @@
    :rdfs/label       {:rdf/language "en",
                       :rdf/value    "Any"}})
 
-(def ^{:private true} ArtificalGravity
+(def ArtificalGravity
   "ArtificalGravity"
   {:db/ident         :discipline/ArtificalGravity,
    :rdf/type         :qudt/Discipline,
@@ -117,7 +116,7 @@
                        :rdf/value    "Artifical gravity"}],
    :skos/broader     :discipline/StructuresAndMechanics})
 
-(def ^{:private true} Astrionics
+(def Astrionics
   "<p><em>Astrionics</em> is the science and technology of the development and application of electronic systems, sub-systems, and components used in spacecraft. The electronic systems on board a spacecraft include attitude determination and control, communications, command and telemetry, and computer systems. Sensors refers to the electronic components on board a spacecraft. For engineers one of the most important considerations that must be made in the design process is the environment in which the spacecraft systems and components must operate and endure. The challenges of designing systems and components for the space environment include more than the fact that space is a vacuum.</p>"
   {:db/ident :discipline/Astrionics,
    :qudt/onlineReference
@@ -135,7 +134,7 @@
                    :discipline/AttitudeControl
                    :discipline/GuidanceAndNavigation]})
 
-(def ^{:private true} Astrobiology
+(def Astrobiology
   "Astrobiology"
   {:db/ident         :discipline/Astrobiology,
    :rdf/type         :qudt/Discipline,
@@ -144,7 +143,7 @@
                       :rdf/value    "Astrobiology"},
    :skos/broader     :discipline/Biology})
 
-(def ^{:private true} Astrodynamics
+(def Astrodynamics
   "Astrodynamics"
   {:db/ident         :discipline/Astrodynamics,
    :rdf/type         :qudt/Discipline,
@@ -156,7 +155,7 @@
                       :discipline/ClassicalMechanics],
    :skos/narrower    :discipline/OrbitalMechanics})
 
-(def ^{:private true} AtmosphericChemistry
+(def AtmosphericChemistry
   "AtmosphericChemistry"
   {:db/ident         :discipline/AtmosphericChemistry,
    :rdf/type         :qudt/Discipline,
@@ -165,7 +164,7 @@
                       :rdf/value    "AtmosphericChemistry"},
    :skos/broader     :discipline/AtmosphericScience})
 
-(def ^{:private true} AtmosphericPhysics
+(def AtmosphericPhysics
   "AtmosphericPhysics"
   {:db/ident         :discipline/AtmosphericPhysics,
    :qudt/relevantQuantityKind :quantitykind/AtmosphericPressure,
@@ -175,7 +174,7 @@
                       :rdf/value    "AtmosphericPhysics"},
    :skos/broader     :discipline/AtmosphericScience})
 
-(def ^{:private true} AtmosphericScience
+(def AtmosphericScience
   "AtmosphericScience"
   {:db/ident         :discipline/AtmosphericScience,
    :rdf/type         :qudt/Discipline,
@@ -184,7 +183,7 @@
                       :rdf/value    "AtmosphericScience"},
    :skos/broader     :discipline/Science})
 
-(def ^{:private true} AtomicPhysics
+(def AtomicPhysics
   "AtomicPhysics"
   {:db/ident         :discipline/AtomicPhysics,
    :qudt/relevantQuantityKind
@@ -320,7 +319,7 @@
                       :rdf/value    "AtomicPhysics"},
    :skos/broader     :discipline/Physics})
 
-(def ^{:private true} AttitudeControl
+(def AttitudeControl
   "AttitudeControl"
   {:db/ident         :discipline/AttitudeControl,
    :rdf/type         :qudt/Discipline,
@@ -331,7 +330,7 @@
                        :rdf/value    "Attitude control"}],
    :skos/broader     :discipline/Astrionics})
 
-(def ^{:private true} Autonomy
+(def Autonomy
   "Autonomy"
   {:db/ident         :discipline/Autonomy,
    :rdf/type         :qudt/Discipline,
@@ -340,7 +339,7 @@
                       :rdf/value    "Autonomy"},
    :skos/broader     :discipline/Engineering})
 
-(def ^{:private true} Avionics
+(def Avionics
   "Avionics"
   {:db/ident         :discipline/Avionics,
    :rdf/type         :qudt/Discipline,
@@ -349,7 +348,7 @@
                       :rdf/value    "Avionics"},
    :skos/broader     :discipline/SpaceSystemEngineering})
 
-(def ^{:private true} BioChemistry
+(def BioChemistry
   "BioChemistry"
   {:db/ident         :discipline/BioChemistry,
    :rdf/type         :qudt/Discipline,
@@ -358,7 +357,7 @@
                       :rdf/value    "BioChemistry"},
    :skos/broader     :discipline/LifeSciences})
 
-(def ^{:private true} BioInformatics
+(def BioInformatics
   "BioInformatics"
   {:db/ident         :discipline/BioInformatics,
    :rdf/type         :qudt/Discipline,
@@ -367,7 +366,7 @@
                       :rdf/value    "BioInformatics"},
    :skos/broader     :discipline/Informatics})
 
-(def ^{:private true} Biology
+(def Biology
   "Biology"
   {:db/ident         :discipline/Biology,
    :qudt/relevantQuantityKind [:quantitykind/SerumOrPlasmaLevel
@@ -380,7 +379,7 @@
                       :rdf/value    "Biology"},
    :skos/broader     :discipline/Science})
 
-(def ^{:private true} Biomechanics
+(def Biomechanics
   "Biomechanics"
   {:db/ident         :discipline/Biomechanics,
    :rdf/type         :qudt/Discipline,
@@ -389,7 +388,7 @@
                       :rdf/value    "Biomechanics"},
    :skos/broader     :discipline/ClassicalMechanics})
 
-(def ^{:private true} CelestialMechanics
+(def CelestialMechanics
   "CelestialMechanics"
   {:db/ident         :discipline/CelestialMechanics,
    :qudt/relevantQuantityKind [:quantitykind/StandardGravitationalParameter
@@ -403,12 +402,12 @@
    :skos/broader     [:discipline/ClassicalMechanics
                       :discipline/Astrodynamics]})
 
-(def ^{:private true} CharacteristicNumber
+(def CharacteristicNumber
   {:db/ident :discipline/CharacteristicNumber,
    :qudt/relevantQuantityKind [:quantitykind/ReynoldsNumber
                                :quantitykind/MachNumber]})
 
-(def ^{:private true} ChemicalEngineering
+(def ChemicalEngineering
   "ChemicalEngineering"
   {:db/ident         :discipline/ChemicalEngineering,
    :rdf/type         :qudt/Discipline,
@@ -419,7 +418,7 @@
                        :rdf/value    "Chemical engineering"}],
    :skos/broader     [:discipline/PhysicalScience :discipline/Engineering]})
 
-(def ^{:private true} ChemicalPropulsion
+(def ChemicalPropulsion
   "Chemical propulsion"
   {:db/ident         :discipline/ChemicalPropulsion,
    :rdf/type         :qudt/Discipline,
@@ -428,7 +427,7 @@
                       :rdf/value    "Chemical propulsion"},
    :skos/broader     :discipline/Propulsion})
 
-(def ^{:private true} Chemistry
+(def Chemistry
   "Chemistry"
   {:db/ident         :discipline/Chemistry,
    :qudt/relevantQuantityKind
@@ -513,7 +512,7 @@
                       :rdf/value    "Chemistry"},
    :skos/broader     :discipline/Science})
 
-(def ^{:private true} ClassicalMechanics
+(def ClassicalMechanics
   "ClassicalMechanics"
   {:db/ident         :discipline/ClassicalMechanics,
    :rdf/type         :qudt/Discipline,
@@ -522,7 +521,7 @@
                       :rdf/value    "ClassicalMechanics"},
    :skos/broader     [:discipline/Physics :discipline/Mechanics]})
 
-(def ^{:private true} Climatology
+(def Climatology
   "Climatology"
   {:db/ident         :discipline/Climatology,
    :qudt/relevantQuantityKind :quantitykind/AbsoluteHumidity,
@@ -532,7 +531,7 @@
                       :rdf/value    "Climatology"},
    :skos/broader     :discipline/AtmosphericScience})
 
-(def ^{:private true} Commerce
+(def Commerce
   "Commerce"
   {:db/ident         :discipline/Commerce,
    :rdf/type         :qudt/Discipline,
@@ -541,7 +540,7 @@
                       :rdf/value    "Commerce"},
    :skos/broader     :discipline/Economics})
 
-(def ^{:private true} Communications
+(def Communications
   "Communications"
   {:db/ident         :discipline/Communications,
    :qudt/relevantQuantityKind [:quantitykind/SignalDetectionThreshold
@@ -555,7 +554,7 @@
                       :rdf/value    "Communications"},
    :skos/broader     [:discipline/Astrionics :discipline/Engineering]})
 
-(def ^{:private true} ComputerScience
+(def ComputerScience
   "ComputerScience"
   {:db/ident         :discipline/ComputerScience,
    :rdf/type         :qudt/Discipline,
@@ -568,7 +567,7 @@
                        :rdf/value    "Computer science discipline"}],
    :skos/broader     :discipline/Science})
 
-(def ^{:private true} ConfigurationManagement
+(def ConfigurationManagement
   "ConfigurationManagement"
   {:db/ident         :discipline/ConfigurationManagement,
    :rdf/type         :qudt/Discipline,
@@ -579,7 +578,7 @@
                        :rdf/value    "Configuration management"}],
    :skos/broader     [:discipline/SystemEngineering :discipline/Management]})
 
-(def ^{:private true} ContinuumMechanics
+(def ContinuumMechanics
   "ContinuumMechanics"
   {:db/ident         :discipline/ContinuumMechanics,
    :rdf/type         :qudt/Discipline,
@@ -588,7 +587,7 @@
                       :rdf/value    "ContinuumMechanics"},
    :skos/broader     :discipline/Mechanics})
 
-(def ^{:private true} ControlEngineering
+(def ControlEngineering
   "ControlEngineering"
   {:db/ident         :discipline/ControlEngineering,
    :rdf/type         :qudt/Discipline,
@@ -599,7 +598,7 @@
                        :rdf/value    "Control engineering"}],
    :skos/broader     [:discipline/PhysicalScience :discipline/Engineering]})
 
-(def ^{:private true} CostEstimation
+(def CostEstimation
   "CostEstimation"
   {:db/ident         :discipline/CostEstimation,
    :rdf/type         :qudt/Discipline,
@@ -610,7 +609,7 @@
                        :rdf/value    "Cost estimation"}],
    :skos/broader     :discipline/Finance})
 
-(def ^{:private true} Cryogenics
+(def Cryogenics
   "Cryogenics"
   {:db/ident         :discipline/Cryogenics,
    :rdf/type         :qudt/Discipline,
@@ -621,7 +620,7 @@
                       :discipline/Physics
                       :discipline/PhysicalScience]})
 
-(def ^{:private true} Currency
+(def Currency
   "Currency"
   {:db/ident         :discipline/Currency,
    :qudt/relevantQuantityKind :quantitykind/Currency,
@@ -631,7 +630,7 @@
                       :rdf/value    "Currency"},
    :skos/broader     :discipline/Finance})
 
-(def ^{:private true} Dimensionless
+(def Dimensionless
   "Dimensionless"
   {:db/ident         :discipline/Dimensionless,
    :qudt/relevantQuantityKind [:quantitykind/DimensionlessRatio
@@ -642,7 +641,7 @@
                       :rdf/value    "Dimensionless"},
    :skos/broader     "http://qudt.org/vocab/discipline/"})
 
-(def ^{:private true} Dynamics
+(def Dynamics
   "Dynamics"
   {:db/ident         :discipline/Dynamics,
    :rdf/type         :qudt/Discipline,
@@ -651,7 +650,7 @@
                       :rdf/value    "Dynamics"},
    :skos/broader     :discipline/Engineering})
 
-(def ^{:private true} Economics
+(def Economics
   "Economics"
   {:db/ident         :discipline/Economics,
    :rdf/type         :qudt/Discipline,
@@ -660,7 +659,7 @@
                       :rdf/value    "Economics"},
    :skos/broader     :discipline/SocialScience})
 
-(def ^{:private true} ElectricalEngineering
+(def ElectricalEngineering
   "ElectricalEngineering"
   {:db/ident         :discipline/ElectricalEngineering,
    :rdf/type         :qudt/Discipline,
@@ -671,7 +670,7 @@
                        :rdf/value    "Electrical Engineering"}],
    :skos/broader     :discipline/Engineering})
 
-(def ^{:private true} ElectricityAndMagnetism
+(def ElectricityAndMagnetism
   "ElectricityAndMagnetism"
   {:db/ident         :discipline/ElectricityAndMagnetism,
    :qudt/relevantQuantityKind
@@ -794,7 +793,7 @@
                       :rdf/value    "ElectricityAndMagnetism"},
    :skos/broader     :discipline/Physics})
 
-(def ^{:private true} ElectronicEngineering
+(def ElectronicEngineering
   "ElectronicEngineering"
   {:db/ident         :discipline/ElectronicEngineering,
    :rdf/type         :qudt/Discipline,
@@ -803,7 +802,7 @@
                       :rdf/value    "ElectronicEngineering"},
    :skos/broader     :discipline/Engineering})
 
-(def ^{:private true} Energy
+(def Energy
   "Energy"
   {:db/ident         :discipline/Energy,
    :qudt/relevantQuantityKind [:quantitykind/EnergyKinetic
@@ -827,7 +826,7 @@
                       :rdf/value    "Energy"},
    :skos/broader     :discipline/Physics})
 
-(def ^{:private true} Engineering
+(def Engineering
   "Engineering"
   {:db/ident         :discipline/Engineering,
    :rdf/type         :qudt/Discipline,
@@ -836,7 +835,7 @@
                       :rdf/value    "Engineering"},
    :skos/broader     [:discipline/Any "http://qudt.org/vocab/discipline/"]})
 
-(def ^{:private true} EnvironmentControl
+(def EnvironmentControl
   "EnvironmentControl"
   {:db/ident         :discipline/EnvironmentControl,
    :rdf/type         :qudt/Discipline,
@@ -847,7 +846,7 @@
                        :rdf/value    "Environment control"}],
    :skos/broader     :discipline/SpaceSystemEngineering})
 
-(def ^{:private true} Finance
+(def Finance
   "Finance"
   {:db/ident         :discipline/Finance,
    :qudt/relevantQuantityKind :quantitykind/Asset,
@@ -857,7 +856,7 @@
                       :rdf/value    "Finance"},
    :skos/broader     [:discipline/Any "http://qudt.org/vocab/discipline/"]})
 
-(def ^{:private true} FluidDynamics
+(def FluidDynamics
   "Fluid dynamics is the sub-discipline of fluid mechanics dealing with fluids (liquids and gases) in motion. It has several subdisciplines itself, including aerodynamics (the study of gases in motion) and hydrodynamics (the study of liquids in motion). Fluid dynamics has a wide range of applications, including calculating forces and moments on aircraft, determining the mass flow rate of petroleum through pipelines, predicting weather patterns, understanding nebulae in interstellar space and reportedly modelling fission weapon detonation. Some of its principles are even used in traffic engineering, where traffic is treated as a continuous fluid. Fluid dynamics offers a systematic structure that underlies these practical disciplines and that embraces empirical and semi-empirical laws, derived from flow measurement, used to solve practical problems. The solution of a fluid dynamics problem typically involves calculation of various properties of the fluid, such as velocity, pressure, density, and temperature, as functions of space and time."
   {:db/ident :discipline/FluidDynamics,
    :dcterms/description
@@ -884,7 +883,7 @@
    :skos/broader :discipline/FluidMechanics,
    :skos/narrower [:discipline/Hydrodynamics :discipline/Aerodynamics]})
 
-(def ^{:private true} FluidMechanics
+(def FluidMechanics
   "FluidMechanics"
   {:db/ident         :discipline/FluidMechanics,
    :rdf/type         :qudt/Discipline,
@@ -897,7 +896,7 @@
                       :discipline/ClassicalMechanics],
    :skos/narrower    :discipline/FluidDynamics})
 
-(def ^{:private true} GuidanceAndNavigation
+(def GuidanceAndNavigation
   "GuidanceAndNavigation"
   {:db/ident         :discipline/GuidanceAndNavigation,
    :rdf/type         :qudt/Discipline,
@@ -908,7 +907,7 @@
                        :rdf/value    "Guidance and Navigation"}],
    :skos/broader     [:discipline/Avionics :discipline/Astrionics]})
 
-(def ^{:private true} HumanFactors
+(def HumanFactors
   "HumanFactors"
   {:db/ident         :discipline/HumanFactors,
    :rdf/type         :qudt/Discipline,
@@ -919,7 +918,7 @@
                        :rdf/value    "Human factors"}],
    :skos/broader     :discipline/SocialScience})
 
-(def ^{:private true} Hydraulics
+(def Hydraulics
   "Hydraulics"
   {:db/ident         :discipline/Hydraulics,
    :rdf/type         :qudt/Discipline,
@@ -928,7 +927,7 @@
                       :rdf/value    "Hydraulics"},
    :skos/broader     :discipline/ClassicalMechanics})
 
-(def ^{:private true} HydraulicsEngineering
+(def HydraulicsEngineering
   "Hydraulics engineering"
   {:db/ident         :discipline/HydraulicsEngineering,
    :rdf/type         :qudt/Discipline,
@@ -937,7 +936,7 @@
                       :rdf/value    "Hydraulics engineering"},
    :skos/broader     [:discipline/PhysicalScience :discipline/Engineering]})
 
-(def ^{:private true} Hydrodynamics
+(def Hydrodynamics
   "Hydrodynamics"
   {:db/ident         :discipline/Hydrodynamics,
    :rdf/type         :qudt/Discipline,
@@ -946,7 +945,7 @@
                       :rdf/value    "Hydrodynamics"},
    :skos/broader     :discipline/FluidDynamics})
 
-(def ^{:private true} HypersonicAerodynamics
+(def HypersonicAerodynamics
   "<p><em>Hypersonic Aerodynamics</em> is a special branch of the study of aeronautics. The chief characteristic of hypersonic aerodynamics is that the temperature of the flow around the aircraft is so great that the chemistry of the gas must be considered. At low hypersonic speeds, the molecular bonds vibrate, which changes the magnitude of the forces generated by the air on the aircraft. At higher hypersonic speeds, the molecules break apart producing an electrically charged plasma around the aircraft. Large variations in air density and pressure occur because of shock waves, and expansions. Hypersonic aircraft typically have very thick boundary layers along the surface and high heat transfer to the surface. All of these high speed flow phenomena lead to a vehicle design unlike the typical airliner or fighter aircraft.</p>"
   {:db/ident :discipline/HypersonicAerodynamics,
    :qudt/onlineReference
@@ -963,7 +962,7 @@
    :skos/definition
    "<p><em>Hypersonic Aerodynamics</em> is a special branch of the study of aeronautics. The chief characteristic of hypersonic aerodynamics is that the temperature of the flow around the aircraft is so great that the chemistry of the gas must be considered. At low hypersonic speeds, the molecular bonds vibrate, which changes the magnitude of the forces generated by the air on the aircraft. At higher hypersonic speeds, the molecules break apart producing an electrically charged plasma around the aircraft. Large variations in air density and pressure occur because of shock waves, and expansions. Hypersonic aircraft typically have very thick boundary layers along the surface and high heat transfer to the surface. All of these high speed flow phenomena lead to a vehicle design unlike the typical airliner or fighter aircraft.</p>"})
 
-(def ^{:private true} Informatics
+(def Informatics
   "Informatics"
   {:db/ident         :discipline/Informatics,
    :rdf/type         :qudt/Discipline,
@@ -972,7 +971,7 @@
                       :rdf/value    "Informatics"},
    :skos/broader     :discipline/ComputerScience})
 
-(def ^{:private true} InformationEngineering
+(def InformationEngineering
   "Information engineering"
   {:db/ident         :discipline/InformationEngineering,
    :rdf/type         :qudt/Discipline,
@@ -981,7 +980,7 @@
                       :rdf/value    "Information engineering"},
    :skos/broader     [:discipline/Science :discipline/Engineering]})
 
-(def ^{:private true} InformationTheory
+(def InformationTheory
   "InformationTheory"
   {:db/ident         :discipline/InformationTheory,
    :qudt/relevantQuantityKind [:quantitykind/VideoFrameRate
@@ -995,7 +994,7 @@
                       :rdf/value    "InformationTheory"},
    :skos/broader     :discipline/Informatics})
 
-(def ^{:private true} IntegratedSystemHealthMonitoriing
+(def IntegratedSystemHealthMonitoriing
   "Integrated system health monitoriing"
   {:db/ident         :discipline/IntegratedSystemHealthMonitoriing,
    :rdf/type         :qudt/Discipline,
@@ -1004,7 +1003,7 @@
                       :rdf/value    "Integrated system health monitoriing"},
    :skos/broader     :discipline/Systems})
 
-(def ^{:private true} IntegratedSystemHealthMonitoring
+(def IntegratedSystemHealthMonitoring
   "Integrated system health monitoring"
   {:db/ident         :discipline/IntegratedSystemHealthMonitoring,
    :rdf/type         :qudt/Discipline,
@@ -1017,7 +1016,7 @@
                       :discipline/SpaceSystemEngineering],
    :skos/prefLabel   "Integrated system health monitoring"})
 
-(def ^{:private true} IntegratedVehicleHealthManagement
+(def IntegratedVehicleHealthManagement
   "IntegratedVehicleHealthManagement"
   {:db/ident         :discipline/IntegratedVehicleHealthManagement,
    :rdf/type         :qudt/Discipline,
@@ -1030,7 +1029,7 @@
                       :discipline/IntegratedSystemHealthMonitoring
                       :discipline/Astrionics]})
 
-(def ^{:private true} Kinematics
+(def Kinematics
   "Kinematics"
   {:db/ident         :discipline/Kinematics,
    :rdf/type         :qudt/Discipline,
@@ -1039,7 +1038,7 @@
                       :rdf/value    "Kinematics"},
    :skos/broader     :discipline/ClassicalMechanics})
 
-(def ^{:private true} KnowledgeEngineering
+(def KnowledgeEngineering
   "KnowledgeEngineering"
   {:db/ident         :discipline/KnowledgeEngineering,
    :rdf/type         :qudt/Discipline,
@@ -1050,7 +1049,7 @@
                        :rdf/value    "Knowledge Engineering"}],
    :skos/broader     [:discipline/Science :discipline/Engineering]})
 
-(def ^{:private true} LifeSciences
+(def LifeSciences
   "LifeSciences"
   {:db/ident         :discipline/LifeSciences,
    :qudt/relevantQuantityKind [:quantitykind/SerumOrPlasmaLevel
@@ -1067,7 +1066,7 @@
                       :rdf/value    "LifeSciences"},
    :skos/broader     :discipline/Biology})
 
-(def ^{:private true} Light
+(def Light
   "Light"
   {:db/ident         :discipline/Light,
    :qudt/relevantQuantityKind [:quantitykind/Wavelength
@@ -1078,7 +1077,7 @@
                       :rdf/value    "Light"},
    :skos/broader     :discipline/Science})
 
-(def ^{:private true} Loads
+(def Loads
   "Loads"
   {:db/ident         :discipline/Loads,
    :rdf/type         :qudt/Discipline,
@@ -1087,7 +1086,7 @@
                       :rdf/value    "Loads"},
    :skos/broader     :discipline/SpaceSystemEngineering})
 
-(def ^{:private true} LoadsAnalysis
+(def LoadsAnalysis
   "LoadsAnalysis"
   {:db/ident         :discipline/LoadsAnalysis,
    :rdf/type         :qudt/Discipline,
@@ -1098,7 +1097,7 @@
                        :rdf/value    "Loads analysis"}],
    :skos/broader     :discipline/StructuresAndMechanics})
 
-(def ^{:private true} LoadsAndMassProperties
+(def LoadsAndMassProperties
   "Loads and mass properties"
   {:db/ident         :discipline/LoadsAndMassProperties,
    :rdf/type         :qudt/Discipline,
@@ -1108,7 +1107,7 @@
    :skos/broader     [:discipline/SpaceSystemEngineering
                       :discipline/MechanicalEngineering]})
 
-(def ^{:private true} Logistics
+(def Logistics
   "Logistics"
   {:db/ident         :discipline/Logistics,
    :rdf/type         :qudt/Discipline,
@@ -1118,7 +1117,7 @@
    :skos/broader     [:discipline/SpaceSystemEngineering
                       :discipline/Management]})
 
-(def ^{:private true} Macroeconomics
+(def Macroeconomics
   "Macroeconomics"
   {:db/ident         :discipline/Macroeconomics,
    :rdf/type         :qudt/Discipline,
@@ -1127,7 +1126,7 @@
                       :rdf/value    "Macroeconomics"},
    :skos/broader     :discipline/Economics})
 
-(def ^{:private true} Management
+(def Management
   "Management"
   {:db/ident         :discipline/Management,
    :rdf/type         :qudt/Discipline,
@@ -1136,7 +1135,7 @@
                       :rdf/value    "Management"},
    :skos/broader     [:discipline/Any "http://qudt.org/vocab/discipline/"]})
 
-(def ^{:private true} Mass
+(def Mass
   "Mass"
   {:db/ident         :discipline/Mass,
    :qudt/relevantQuantityKind [:quantitykind/LinearDensity
@@ -1172,7 +1171,7 @@
                       :rdf/value    "Mass"},
    :skos/broader     :discipline/ClassicalMechanics})
 
-(def ^{:private true} MassProperties
+(def MassProperties
   "Mass properties"
   {:db/ident         :discipline/MassProperties,
    :rdf/type         :qudt/Discipline,
@@ -1181,7 +1180,7 @@
                       :rdf/value    "Mass properties"},
    :skos/broader     :discipline/StructuresAndMechanics})
 
-(def ^{:private true} MassProperty
+(def MassProperty
   "MassProperty"
   {:db/ident         :discipline/MassProperty,
    :qudt/relevantQuantityKind
@@ -1218,7 +1217,7 @@
                       :rdf/value    "MassProperty"},
    :skos/broader     :discipline/ClassicalMechanics})
 
-(def ^{:private true} Materials
+(def Materials
   "Materials"
   {:db/ident         :discipline/Materials,
    :rdf/type         :qudt/Discipline,
@@ -1227,7 +1226,7 @@
                       :rdf/value    "Materials"},
    :skos/broader     :discipline/StructuresAndMechanics})
 
-(def ^{:private true} MaterialsAndStructures
+(def MaterialsAndStructures
   "Materials and structures"
   {:db/ident         :discipline/MaterialsAndStructures,
    :rdf/type         :qudt/Discipline,
@@ -1237,7 +1236,7 @@
    :skos/broader     [:discipline/SpaceSystemEngineering
                       :discipline/MechanicalEngineering]})
 
-(def ^{:private true} MaterialsScience
+(def MaterialsScience
   "MaterialsScience"
   {:db/ident         :discipline/MaterialsScience,
    :rdf/type         :qudt/Discipline,
@@ -1246,7 +1245,7 @@
                       :rdf/value    "MaterialsScience"},
    :skos/broader     :discipline/Science})
 
-(def ^{:private true} MechanicalEngineering
+(def MechanicalEngineering
   "MechanicalEngineering"
   {:db/ident         :discipline/MechanicalEngineering,
    :rdf/type         :qudt/Discipline,
@@ -1257,7 +1256,7 @@
                        :rdf/value    "Mechanical engineering"}],
    :skos/broader     [:discipline/PhysicalScience :discipline/Engineering]})
 
-(def ^{:private true} Mechanics
+(def Mechanics
   "Mechanics"
   {:db/ident         :discipline/Mechanics,
    :qudt/relevantQuantityKind [:quantitykind/MassPerTime
@@ -1339,7 +1338,7 @@
                       :rdf/value    "Mechanics"},
    :skos/broader     :discipline/Physics})
 
-(def ^{:private true} Mechanisms
+(def Mechanisms
   "Mechanisms"
   {:db/ident         :discipline/Mechanisms,
    :rdf/type         :qudt/Discipline,
@@ -1348,7 +1347,7 @@
                       :rdf/value    "Mechanisms"},
    :skos/broader     :discipline/StructuresAndMechanics})
 
-(def ^{:private true} MedicalInformatics
+(def MedicalInformatics
   "MedicalInformatics"
   {:db/ident         :discipline/MedicalInformatics,
    :rdf/type         :qudt/Discipline,
@@ -1357,7 +1356,7 @@
                       :rdf/value    "MedicalInformatics"},
    :skos/broader     :discipline/Informatics})
 
-(def ^{:private true} Medicine
+(def Medicine
   "Medicine"
   {:db/ident         :discipline/Medicine,
    :qudt/relevantQuantityKind [:quantitykind/BodyMassIndex
@@ -1372,7 +1371,7 @@
                       :rdf/value    "Medicine"},
    :skos/broader     :discipline/LifeSciences})
 
-(def ^{:private true} Meteorology
+(def Meteorology
   "Meteorology"
   {:db/ident         :discipline/Meteorology,
    :rdf/type         :qudt/Discipline,
@@ -1381,7 +1380,7 @@
                       :rdf/value    "Meteorology"},
    :skos/broader     :discipline/AtmosphericScience})
 
-(def ^{:private true} MissionPlanning
+(def MissionPlanning
   "MissionPlanning"
   {:db/ident         :discipline/MissionPlanning,
    :rdf/type         :qudt/Discipline,
@@ -1394,7 +1393,7 @@
                       :discipline/SpaceSystemEngineering
                       :discipline/Management]})
 
-(def ^{:private true} ModelingAndSimulation
+(def ModelingAndSimulation
   "ModelingAndSimulation"
   {:db/ident         :discipline/ModelingAndSimulation,
    :rdf/type         :qudt/Discipline,
@@ -1405,7 +1404,7 @@
                        :rdf/value    "Modeling and simulation"}],
    :skos/broader     :discipline/SystemEngineering})
 
-(def ^{:private true} NuclearPhysics
+(def NuclearPhysics
   "NuclearPhysics"
   {:db/ident         :discipline/NuclearPhysics,
    :rdf/type         :qudt/Discipline,
@@ -1414,7 +1413,7 @@
                       :rdf/value    "NuclearPhysics"},
    :skos/broader     :discipline/QuantumMechanics})
 
-(def ^{:private true} NuclearPower
+(def NuclearPower
   "Nuclear power"
   {:db/ident         :discipline/NuclearPower,
    :rdf/type         :qudt/Discipline,
@@ -1423,7 +1422,7 @@
                       :rdf/value    "Nuclear power"},
    :skos/broader     :discipline/Engineering})
 
-(def ^{:private true} NuclearPropulsion
+(def NuclearPropulsion
   "Nuclear propulsion"
   {:db/ident         :discipline/NuclearPropulsion,
    :rdf/type         :qudt/Discipline,
@@ -1432,7 +1431,7 @@
                       :rdf/value    "Nuclear propulsion"},
    :skos/broader     :discipline/Propulsion})
 
-(def ^{:private true} Nutrition
+(def Nutrition
   "Nutrition"
   {:db/ident         :discipline/Nutrition,
    :rdf/type         :qudt/Discipline,
@@ -1441,7 +1440,7 @@
                       :rdf/value    "Nutrition"},
    :skos/broader     :discipline/LifeSciences})
 
-(def ^{:private true} Optics
+(def Optics
   "Optics"
   {:db/ident         :discipline/Optics,
    :rdf/type         :qudt/Discipline,
@@ -1450,7 +1449,7 @@
                       :rdf/value    "Optics"},
    :skos/broader     [:discipline/Physics :discipline/Light]})
 
-(def ^{:private true} OrbitalMechanics
+(def OrbitalMechanics
   "OrbitalMechanics"
   {:db/ident         :discipline/OrbitalMechanics,
    :rdf/type         :qudt/Discipline,
@@ -1463,7 +1462,7 @@
                       :discipline/Science
                       :discipline/Astrodynamics]})
 
-(def ^{:private true} ParticlePhysics
+(def ParticlePhysics
   "ParticlePhysics"
   {:db/ident         :discipline/ParticlePhysics,
    :rdf/type         :qudt/Discipline,
@@ -1472,7 +1471,7 @@
                       :rdf/value    "ParticlePhysics"},
    :skos/broader     :discipline/QuantumMechanics})
 
-(def ^{:private true} Photometry
+(def Photometry
   "Photometry"
   {:db/ident         :discipline/Photometry,
    :qudt/relevantQuantityKind [:quantitykind/RadiantIntensity
@@ -1502,7 +1501,7 @@
                       :rdf/value    "Photometry"},
    :skos/broader     :discipline/Optics})
 
-(def ^{:private true} PhysicalConstant
+(def PhysicalConstant
   {:db/ident :discipline/PhysicalConstant,
    :qudt/relevantQuantityKind [:quantitykind/FineStructureConstant
                                :quantitykind/MagneticConstant
@@ -1528,7 +1527,7 @@
                                :quantitykind/AvogadroConstant
                                :quantitykind/JosephsonConstant]})
 
-(def ^{:private true} PhysicalScience
+(def PhysicalScience
   "PhysicalScience"
   {:db/ident         :discipline/PhysicalScience,
    :rdf/type         :qudt/Discipline,
@@ -1539,7 +1538,7 @@
                        :rdf/value    "Physical Scence"}],
    :skos/broader     :discipline/Science})
 
-(def ^{:private true} Physics
+(def Physics
   "Physics"
   {:db/ident         :discipline/Physics,
    :qudt/relevantQuantityKind [:quantitykind/Temperature
@@ -1554,7 +1553,7 @@
                       :rdf/value    "Physics"},
    :skos/broader     [:discipline/Science :discipline/PhysicalScience]})
 
-(def ^{:private true} PlasmaDynamics
+(def PlasmaDynamics
   "PlasmaDynamics"
   {:db/ident         :discipline/PlasmaDynamics,
    :rdf/type         :qudt/Discipline,
@@ -1566,7 +1565,7 @@
    :skos/broader     [:discipline/SpaceSystemEngineering
                       :discipline/PlasmaPhysics]})
 
-(def ^{:private true} PlasmaPhysics
+(def PlasmaPhysics
   "PlasmaPhysics"
   {:db/ident         :discipline/PlasmaPhysics,
    :rdf/type         :qudt/Discipline,
@@ -1575,7 +1574,7 @@
                       :rdf/value    "PlasmaPhysics"},
    :skos/broader     :discipline/Physics})
 
-(def ^{:private true} PressurizedSystems
+(def PressurizedSystems
   "PressurizedSystems"
   {:db/ident         :discipline/PressurizedSystems,
    :rdf/type         :qudt/Discipline,
@@ -1586,7 +1585,7 @@
                        :rdf/value    "Pressurized systems"}],
    :skos/broader     :discipline/SystemEngineering})
 
-(def ^{:private true} Propulsion
+(def Propulsion
   "Propulsion"
   {:db/ident         :discipline/Propulsion,
    :qudt/relevantQuantityKind
@@ -1688,7 +1687,7 @@
                       :rdf/value    "Propulsion"},
    :skos/broader     :discipline/SpaceSystemEngineering})
 
-(def ^{:private true} PropulsionSystemsDesign
+(def PropulsionSystemsDesign
   "Propulsion systems design"
   {:db/ident         :discipline/PropulsionSystemsDesign,
    :rdf/type         :qudt/Discipline,
@@ -1697,11 +1696,11 @@
                       :rdf/value    "Propulsion systems design"},
    :skos/broader     :discipline/SpaceSystemEngineering})
 
-(def ^{:private true} QuantityValue
+(def QuantityValue
   {:db/ident :discipline/QuantityValue,
    :qudt/relevantQuantityKind :quantitykind/CV_C_0})
 
-(def ^{:private true} QuantumMechanics
+(def QuantumMechanics
   "QuantumMechanics"
   {:db/ident         :discipline/QuantumMechanics,
    :qudt/relevantQuantityKind :quantitykind/Action,
@@ -1711,7 +1710,7 @@
                       :rdf/value    "QuantumMechanics"},
    :skos/broader     :discipline/Mechanics})
 
-(def ^{:private true} Radiation
+(def Radiation
   "Radiation"
   {:db/ident         :discipline/Radiation,
    :rdf/type         :qudt/Discipline,
@@ -1720,7 +1719,7 @@
                       :rdf/value    "Radiation"},
    :skos/broader     :discipline/Physics})
 
-(def ^{:private true} Radiology
+(def Radiology
   "Radiology"
   {:db/ident         :discipline/Radiology,
    :qudt/relevantQuantityKind [:quantitykind/Exposure
@@ -1733,7 +1732,7 @@
                       :rdf/value    "Radiology"},
    :skos/broader     :discipline/Physics})
 
-(def ^{:private true} Radiometry
+(def Radiometry
   "Radiometry"
   {:db/ident         :discipline/Radiometry,
    :qudt/relevantQuantityKind [:quantitykind/VisibleRadiantEnergy
@@ -1769,7 +1768,7 @@
                       :rdf/value    "Radiometry"},
    :skos/broader     :discipline/Optics})
 
-(def ^{:private true} RequirementsEngineering
+(def RequirementsEngineering
   "RequirementsEngineering"
   {:db/ident         :discipline/RequirementsEngineering,
    :rdf/type         :qudt/Discipline,
@@ -1780,7 +1779,7 @@
                        :rdf/value    "Requirements engineering"}],
    :skos/broader     :discipline/SystemEngineering})
 
-(def ^{:private true} RiskManagement
+(def RiskManagement
   "RiskManagement"
   {:db/ident         :discipline/RiskManagement,
    :rdf/type         :qudt/Discipline,
@@ -1791,7 +1790,7 @@
                        :rdf/value    "Risk Management"}],
    :skos/broader     :discipline/Management})
 
-(def ^{:private true} Science
+(def Science
   "Science"
   {:db/ident         :discipline/Science,
    :rdf/type         :qudt/Discipline,
@@ -1800,7 +1799,7 @@
                       :rdf/value    "Science"},
    :skos/broader     [:discipline/Any "http://qudt.org/vocab/discipline/"]})
 
-(def ^{:private true} SocialScience
+(def SocialScience
   "SocialScience"
   {:db/ident         :discipline/SocialScience,
    :rdf/type         :qudt/Discipline,
@@ -1809,7 +1808,7 @@
                       :rdf/value    "SocialScience"},
    :skos/broader     :discipline/Science})
 
-(def ^{:private true} SoftwareEngineering
+(def SoftwareEngineering
   "SoftwareEngineering"
   {:db/ident         :discipline/SoftwareEngineering,
    :rdf/type         :qudt/Discipline,
@@ -1820,7 +1819,7 @@
                        :rdf/value    "Software engineering"}],
    :skos/broader     [:discipline/Engineering :discipline/ComputerScience]})
 
-(def ^{:private true} SolidStatePhysics
+(def SolidStatePhysics
   "SolidStatePhysics"
   {:db/ident         :discipline/SolidStatePhysics,
    :qudt/relevantQuantityKind
@@ -1897,7 +1896,7 @@
                       :rdf/value    "SolidStatePhysics"},
    :skos/broader     :discipline/Physics})
 
-(def ^{:private true} SpaceAndTime
+(def SpaceAndTime
   "SpaceAndTime"
   {:db/ident         :discipline/SpaceAndTime,
    :qudt/relevantQuantityKind [:quantitykind/RadiusOfCurvature
@@ -1953,7 +1952,7 @@
                       :rdf/value    "SpaceAndTime"},
    :skos/broader     :discipline/Physics})
 
-(def ^{:private true} SpaceSystemEngineering
+(def SpaceSystemEngineering
   "SpaceSystemEngineering"
   {:db/ident         :discipline/SpaceSystemEngineering,
    :rdf/type         :qudt/Discipline,
@@ -1966,7 +1965,7 @@
                       :discipline/PhysicalScience
                       :discipline/Engineering]})
 
-(def ^{:private true} Spectroscopy
+(def Spectroscopy
   "Spectroscopy"
   {:db/ident         :discipline/Spectroscopy,
    :qudt/relevantQuantityKind :quantitykind/AngularWavenumber,
@@ -1976,7 +1975,7 @@
                       :rdf/value    "Spectroscopy"},
    :skos/broader     [:discipline/Physics :discipline/Light]})
 
-(def ^{:private true} StatisticalMechanics
+(def StatisticalMechanics
   "StatisticalMechanics"
   {:db/ident         :discipline/StatisticalMechanics,
    :rdf/type         :qudt/Discipline,
@@ -1985,7 +1984,7 @@
                       :rdf/value    "StatisticalMechanics"},
    :skos/broader     :discipline/Mechanics})
 
-(def ^{:private true} Structures
+(def Structures
   "Structures"
   {:db/ident         :discipline/Structures,
    :rdf/type         :qudt/Discipline,
@@ -1994,7 +1993,7 @@
                       :rdf/value    "Structures"},
    :skos/broader     :discipline/StructuresAndMechanics})
 
-(def ^{:private true} StructuresAndMechanics
+(def StructuresAndMechanics
   "Determination of initial mass probabilities, centroids, moments of inertia, etc."
   {:db/ident :discipline/StructuresAndMechanics,
    :dcterms/description
@@ -2007,7 +2006,7 @@
                  :rdf/value    "Structures and Mechanics"}],
    :skos/broader :discipline/SpaceSystemEngineering})
 
-(def ^{:private true} SystemDesign
+(def SystemDesign
   "SystemDesign"
   {:db/ident         :discipline/SystemDesign,
    :rdf/type         :qudt/Discipline,
@@ -2018,7 +2017,7 @@
                        :rdf/value    "System design"}],
    :skos/broader     :discipline/SystemEngineering})
 
-(def ^{:private true} SystemEngineering
+(def SystemEngineering
   "SystemEngineering"
   {:db/ident         :discipline/SystemEngineering,
    :rdf/type         :qudt/Discipline,
@@ -2029,7 +2028,7 @@
                        :rdf/value    "System Engineering"}],
    :skos/broader     [:discipline/Systems :discipline/Engineering]})
 
-(def ^{:private true} SystemIntegration
+(def SystemIntegration
   "SystemIntegration"
   {:db/ident         :discipline/SystemIntegration,
    :rdf/type         :qudt/Discipline,
@@ -2040,7 +2039,7 @@
                        :rdf/value    "System Integration"}],
    :skos/broader     :discipline/SystemEngineering})
 
-(def ^{:private true} SystemTesting
+(def SystemTesting
   "SystemTesting"
   {:db/ident         :discipline/SystemTesting,
    :rdf/type         :qudt/Discipline,
@@ -2051,7 +2050,7 @@
                        :rdf/value    "System testing"}],
    :skos/broader     :discipline/SystemEngineering})
 
-(def ^{:private true} Systems
+(def Systems
   "Systems"
   {:db/ident         :discipline/Systems,
    :rdf/type         :qudt/Discipline,
@@ -2060,7 +2059,7 @@
                       :rdf/value    "Systems"},
    :skos/broader     :discipline/Any})
 
-(def ^{:private true} Telebiometrics
+(def Telebiometrics
   "Telebiometrics"
   {:db/ident         :discipline/Telebiometrics,
    :qudt/relevantQuantityKind
@@ -2109,7 +2108,7 @@
                       :rdf/value    "Telebiometrics"},
    :skos/broader     :discipline/ComputerScience})
 
-(def ^{:private true} Telemetry
+(def Telemetry
   "Telemetry"
   {:db/ident         :discipline/Telemetry,
    :rdf/type         :qudt/Discipline,
@@ -2118,7 +2117,7 @@
                       :rdf/value    "Telemetry"},
    :skos/broader     :discipline/SpaceSystemEngineering})
 
-(def ^{:private true} ThermalControl
+(def ThermalControl
   "ThermalControl"
   {:db/ident         :discipline/ThermalControl,
    :rdf/type         :qudt/Discipline,
@@ -2129,7 +2128,7 @@
                        :rdf/value    "Thermal control"}],
    :skos/broader     :discipline/SpaceSystemEngineering})
 
-(def ^{:private true} ThermalEngineering
+(def ThermalEngineering
   "ThermalEngineering"
   {:db/ident         :discipline/ThermalEngineering,
    :rdf/type         :qudt/Discipline,
@@ -2138,7 +2137,7 @@
                       :rdf/value    "ThermalEngineering"},
    :skos/broader     :discipline/Engineering})
 
-(def ^{:private true} ThermalProtection
+(def ThermalProtection
   "ThermalProtection"
   {:db/ident         :discipline/ThermalProtection,
    :rdf/type         :qudt/Discipline,
@@ -2149,7 +2148,7 @@
                        :rdf/value    "Thermal protection"}],
    :skos/broader     :discipline/SpaceSystemEngineering})
 
-(def ^{:private true} Thermodynamics
+(def Thermodynamics
   "Thermodynamics"
   {:db/ident         :discipline/Thermodynamics,
    :qudt/relevantQuantityKind
@@ -2238,7 +2237,7 @@
                       :rdf/value    "Thermodynamics"},
    :skos/broader     :discipline/Mechanics})
 
-(def ^{:private true} TradeStudies
+(def TradeStudies
   "TradeStudies"
   {:db/ident         :discipline/TradeStudies,
    :rdf/type         :qudt/Discipline,
@@ -2249,7 +2248,7 @@
                        :rdf/value    "Trade studies"}],
    :skos/broader     :discipline/Management})
 
-(def ^{:private true} Trajectory
+(def Trajectory
   "Trajectory"
   {:db/ident         :discipline/Trajectory,
    :rdf/type         :qudt/Discipline,
@@ -2258,7 +2257,7 @@
                       :rdf/value    "Trajectory"},
    :skos/broader     :discipline/SpaceSystemEngineering})
 
-(def ^{:private true} TrajectoryAnalysis
+(def TrajectoryAnalysis
   "Planet-centric and Heliocentric trajectory analysis"
   {:db/ident            :discipline/TrajectoryAnalysis,
    :dcterms/description "Planet-centric and Heliocentric trajectory analysis",
@@ -2268,7 +2267,7 @@
                          :rdf/value    "Trajectory analysis"},
    :skos/broader        :discipline/TrajectoryAnalysisAndDesign})
 
-(def ^{:private true} TrajectoryAnalysisAndDesign
+(def TrajectoryAnalysisAndDesign
   "TrajectoryAnalysisAndDesign"
   {:db/ident         :discipline/TrajectoryAnalysisAndDesign,
    :rdf/type         :qudt/Discipline,
@@ -2279,7 +2278,7 @@
                        :rdf/value    "Trajectory analysis and design"}],
    :skos/broader     :discipline/SpaceSystemEngineering})
 
-(def ^{:private true} TrajectoryDesign
+(def TrajectoryDesign
   "Trajectory design"
   {:db/ident         :discipline/TrajectoryDesign,
    :rdf/type         :qudt/Discipline,
@@ -2288,7 +2287,7 @@
                       :rdf/value    "Trajectory design"},
    :skos/broader     :discipline/TrajectoryAnalysisAndDesign})
 
-(def ^{:private true} VehicleSystemsDesign
+(def VehicleSystemsDesign
   "Vehicle systems design"
   {:db/ident         :discipline/VehicleSystemsDesign,
    :rdf/type         :qudt/Discipline,
@@ -2298,7 +2297,7 @@
    :skos/broader     [:discipline/SystemDesign
                       :discipline/SpaceSystemEngineering]})
 
-(def ^{:private true} Vibration
+(def Vibration
   "Vibration"
   {:db/ident         :discipline/Vibration,
    :rdf/type         :qudt/Discipline,
@@ -2307,7 +2306,7 @@
                       :rdf/value    "Vibration"},
    :skos/broader     :discipline/Mechanics})
 
-(def ^{:private true} VibrationAnalysis
+(def VibrationAnalysis
   "Vibration analysis"
   {:db/ident         :discipline/VibrationAnalysis,
    :rdf/type         :qudt/Discipline,

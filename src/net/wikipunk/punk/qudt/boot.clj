@@ -88,5 +88,5 @@
 (def discipline
   {:dcat/downloadURL "https://raw.githubusercontent.com/qudt/qudt-public-repo/main/vocab/disciplines/VOCAB_QUDT-DISCIPLINES-v2.1.ttl"
    :rdfa/uri         "http://qudt.org/vocab/discipline/"
-   :rdfa/prefix      "qudt.discipline"
+   :rdfa/prefix      "discipline"
    :rdf/type         :rdfa/PrefixMapping})
