@@ -1,7 +1,19 @@
 # net.wikipunk/punk.qudt
-A new RDF vocabulary for wikipunk.net
+Quantity
 
-## Usage
+## QUDT
+[QUDT](https://qudt.org/) 
+
+* Conversion between single and complex unit types
+* Dimensional analysis of equations
+* Finding out equivalent units in different systems of units
+* Finding out equivalent quantity kinds in different systems of
+  quantities
+
+### :rdfs/seeAlso
+[User Guide for QUDT](https://github.com/qudt/qudt-public-repo/wiki/User-Guide-for-QUDT)
+
+## :dev
 
 ``` shell
 clojure -A:dev
