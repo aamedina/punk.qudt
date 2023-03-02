@@ -26,7 +26,7 @@
    :rdfs/isDefinedBy      "http://qudt.org/2.1/schema/qudt",
    :rdfs/label            "QUDT Schema - Version 2.1.24",
    :vaem/hasGraphMetadata :vaem/GMD_QUDT-SCHEMA}
-  (:refer-clojure :exclude [bytes symbol]))
+  (:refer-clojure :exclude [bytes symbol vector type]))
 
 (def AbstractQuantityKind
   "Quantity Kind (abstract)"

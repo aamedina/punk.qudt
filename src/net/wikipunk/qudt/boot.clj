@@ -1,4 +1,4 @@
-(ns net.wikipunk.punk.qudt.boot
+(ns net.wikipunk.qudt.boot
   {:rdf/type :jsonld/Context}
   (:require
    [net.wikipunk.rdf.rdf]
@@ -12,7 +12,8 @@
    [net.wikipunk.rdf.skos]
    [net.wikipunk.rdf.vaem]
    [net.wikipunk.rdf.voag]
-   [net.wikipunk.rdf.xsd]))
+   [net.wikipunk.rdf.xsd]
+   [net.wikipunk.rdf.sh]))
 
 (def punk.qudt
   {:rdf/type    :rdfa/PrefixMapping

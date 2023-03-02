@@ -27,8 +27,7 @@
    [net.wikipunk.rdf :as rdf :refer [doc]]
    [net.wikipunk.temple :as temple]   
    [zprint.core :as zprint]
-   [net.wikipunk.punk.qudt.boot]
-   [net.wikipunk.rdf.punk.qudt])
+   [net.wikipunk.qudt.boot])
   (:refer-clojure :exclude [isa? descendants parents ancestors]))
 
 (set-init
